@@ -1,0 +1,116 @@
+<html>
+    <head>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/masonry/4.2.2/masonry.pkgd.min.js"></script>
+        <style>
+            body {
+                background-color: #500;
+                background-image: url("https://wallpaperaccess.com/full/195053.jpg");
+                color: #fff;
+            }
+
+            * {
+                scroll-padding-left: 50px;
+                scroll-padding-right: 50px;
+                scrollbar-color: #fff #0000;
+                font-family: monospace;
+            }
+
+            h1 {
+                color: #fff;
+                margin: auto;
+                padding: 1em;
+
+                text-align: center;
+            }
+            img {
+                width: 100%;
+            }
+            iframe {
+                width: 100%;
+                aspect-ratio: 1.8;
+            }
+            #wrapper {
+                padding: 1em;
+                padding-bottom: 2em;
+                margin: auto;
+                margin-top: 2em;
+                background-color: #000000b0;
+                border-radius: 1em;
+                width: 80%;
+                min-height: 700px;
+            }
+            .container {
+                display: block;
+                margin: 0 auto;
+                max-width: 80%;
+                position: relative;
+            }
+            .content {
+                padding: 1em;
+                margin: auto;
+                margin-top: 1em;
+                width: calc(50% - 3em);
+                background-color: #000;
+                border-radius: 1em;
+                border-style: solid;
+                border-width: 1px;
+                border-color: #fff;
+            }
+            .content hr {
+                width: 100%;
+                border-color: #fff;
+            }
+            .content h3 {
+                color: #fff;
+                padding-left: 1em;
+            }
+        </style>
+        <title>Fireflies on Mars</title>
+    </head>
+    <body>
+        <div id="wrapper">
+            <div><h1>HI EMY UND SEBASTIAN!</h1></div>
+            <hr width="90%">
+
+            <div class="container">
+                <div class="content">
+                    <h3>Live Lea Reaction:</h3>
+                    <hr>
+                    <img src="https://static0.gamerantimages.com/wordpress/wp-content/uploads/2022/07/Zoe-2.jpg">
+                </div>
+
+                <div class="content">
+                    <h3>Zoe (Road 96):</h3>
+                    <hr>
+                    <iframe src="https://www.youtube.com/embed/w3L9iT3jANk?si=ya7-EzsniQMmQ9Jn" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+
+                <div class="content">
+                    <h3>I am just a fish:</h3>
+                    <hr>
+                    <iframe src="https://www.youtube.com/embed/1goAp0XmhZQ?si=sho7u3-yYGYx7HOw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+
+            </div>
+        </div>
+
+        <script>
+            document.addEventListener("DOMContentLoaded", function() {
+              // Wähle das Grid-Element
+              var grid = document.querySelector('.container');
+
+              // Initialisiere Masonry
+              var masonry = new Masonry(grid, {
+                itemSelector: '.content', // Klasse für die Grid-Items
+                columnWidth: '.content' ,
+                percentPosition: true,      // Nutze Prozentangaben für responsives Design
+                gutter: 10                  // Abstand zwischen den Items
+              });
+            });
+
+            window.addEventListener('resize', function () {
+                masonry.layout(); // Aktualisiere das Layout bei Größenänderung
+            });
+          </script>
+    </body>
+</html>
