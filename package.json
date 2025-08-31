@@ -1,0 +1,30 @@
+{
+  "name": "firefliesonmars",
+  "version": "1.0.0",
+  "description": "This is a personal website I use to try new things.",
+  "homepage": "https://github.com/Siimeloni/FirefliesOnMars#readme",
+  "bugs": {
+    "url": "https://github.com/Siimeloni/FirefliesOnMars/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Siimeloni/FirefliesOnMars.git"
+  },
+  "license": "GPL-3.0",
+  "author": "Maik Simon Mikoszek",
+  "type": "commonjs",
+  "main": "src/app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^17.2.1",
+    "ejs": "^3.1.10",
+    "express": "^5.1.0",
+    "http": "^0.0.1-security",
+    "https": "^1.0.0",
+    "mysql2": "^3.14.3",
+    "sequelize": "^6.37.7"
+  }
+}
